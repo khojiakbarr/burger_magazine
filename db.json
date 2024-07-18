@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "id": "4a1a",
+      "category": "Burger"
+    },
+    {
+      "id": "9a42",
+      "category": "Lavash"
+    }
+  ],
+  "foods": [
+    {
+      "id": "d2fb",
+      "name": "big Lavash",
+      "image": "https://img.freepik.com/free-photo/fresh-gourmet-sandwich-with-meat-vegetables-generative-ai_188544-8106.jpg",
+      "price": "25000",
+      "category": "Lavash",
+      "description": "bla\n"
+    },
+    {
+      "id": "1669",
+      "name": "chizz",
+      "image": "https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg",
+      "price": "130000",
+      "category": "Burger",
+      "description": "bla bla bla\n"
+    }
+  ]
+}
