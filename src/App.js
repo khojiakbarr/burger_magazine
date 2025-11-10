@@ -1,23 +1,21 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import MainLayout from "./layout/MainLayout";
-import AddCategory from "./Pages/AddCategory";
-import AddFoots from "./Pages/AddFoots";
-import Foots from "./Pages/Foots";
+import HomePage from "./Pages/HomePage";
+import Products from "./Pages/Products";
+import Cart from "./Pages/Cart";
+import Admin from "./Pages/Admin";
+import Statistics from "./Pages/Statistics";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
-        <Route
-          index
-          element={
-            <h1 className="text-2xl dark:text-white text-center">Welcome</h1>
-          }
-        />
-        <Route path=":category" element={<Foots />} />
-        <Route path="category" element={<AddCategory />} />
-        <Route path="foot" element={<AddFoots />} />
+        <Route index element={<HomePage />} />
+        <Route path="products" element={<Products />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="admin" element={<Admin />} />
+        <Route path="statistics" element={<Statistics />} />
       </Route>
     </Routes>
   );
