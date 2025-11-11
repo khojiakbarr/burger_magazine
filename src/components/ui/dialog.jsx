@@ -57,7 +57,6 @@ const DialogHeader = ({ className, ...props }) => (
 DialogHeader.displayName = "DialogHeader"
 
 const DialogTitle = React.forwardRef(({ className, ...props }, ref) => (
-  // eslint-disable-next-line jsx-a11y/heading-has-content
   <h2
     ref={ref}
     className={cn("text-lg font-semibold leading-none tracking-tight", className)}
