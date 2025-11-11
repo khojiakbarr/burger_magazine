@@ -1,72 +1,99 @@
-# Getting Started with Create React App
+# 🍔 Burger Magazine - E-commerce Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern burger va lavash buyurtma berish tizimi React.js va shadcn/ui asosida qurilgan.
 
-## Available Scripts
+## ✨ Xususiyatlar
 
-In the project directory, you can run:
+- 🛒 **Shopping Cart** - To'liq funksional savat tizimi
+- 👨‍💼 **Admin Panel** - Mahsulotlarni boshqarish (CRUD)
+- 📊 **Statistics** - Buyurtmalar va daromad statistikasi
+- 📱 **Responsive Design** - Barcha qurilmalarda ishlaydi
+- 🎨 **Modern UI** - shadcn/ui komponentlari
 
-### `npm start`
+## 🛠️ Texnologiyalar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js 18
+- **UI Library**: shadcn/ui
+- **State Management**: Zustand
+- **Forms**: React Hook Form
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **Icons**: Lucide React
+- **Backend**: JSON Server (mock API)
+- **Testing**: Jest + React Testing Library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Ishga Tushirish
 
-### `npm test`
+### 1. Dependencies ni o'rnatish
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### 2. Backend serverni ishga tushirish
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Birinchi terminalda:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run server
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Server `http://localhost:3001` da ishga tushadi.
 
-### `npm run eject`
+### 3. Frontend ilovasini ishga tushirish
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ikkinchi terminalda:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ilova `http://localhost:3000` da ochiladi.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Loyiha Tuzilishi
 
-## Learn More
+```
+src/
+├── components/          # UI komponentlari
+│   ├── ui/             # shadcn/ui komponentlari
+│   ├── Navbar.jsx
+│   ├── ProductCard.jsx
+│   ├── ProductDetail.jsx
+│   └── ...
+├── Pages/              # Sahifalar
+│   ├── HomePage.jsx
+│   ├── Products.jsx
+│   ├── Cart.jsx
+│   ├── Admin.jsx
+│   └── Statistics.jsx
+├── store/              # Zustand stores
+│   ├── useCartStore.js
+│   ├── useProductStore.js
+│   └── useOrderStore.js
+└── lib/
+    └── utils.js
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧪 Testlar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Testlarni ishga tushirish:
 
-### Code Splitting
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🏗️ Production Build
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Build fayllari `build/` papkasida yaratiladi.
 
-### Making a Progressive Web App
+## 📝 Qo'shimcha Ma'lumot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Batafsil setup va foydalanish bo'yicha yo'riqnoma uchun [SETUP.md](./SETUP.md) faylini ko'ring.
 
-### Advanced Configuration
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# burger_magazine
-# burger_magazine
+MIT License - Copyright (c) 2024 Burger Magazine
